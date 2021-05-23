@@ -1,6 +1,6 @@
 import { createHeader } from './tabs'
 
-const loadHomePage = () => {
+const createHomePage = () => {
     createHeader()
     let div = document.querySelector('#content')
     let h1 = document.createElement('h1')
@@ -11,4 +11,4 @@ const loadHomePage = () => {
     div.appendChild(h2)
 }
 
-export {loadHomePage};
+export {createHomePage};
