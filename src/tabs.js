@@ -1,3 +1,9 @@
+const createSpace = () => {
+    let space = document.createElement('div')
+    space.id = 'space'
+    document.querySelector('#content').appendChild(space)
+}
+
 const createHeader = () => {
     let header = document.createElement('header')
     let home = document.createElement('div')
@@ -20,6 +26,7 @@ const createHeader = () => {
 
     header.append(home, menu, order, contact)
     document.querySelector('#content').appendChild(header)
+    createSpace()
 }
 
 function illuminate(e) {
