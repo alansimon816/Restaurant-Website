@@ -1,4 +1,5 @@
 import { createHomePage } from './home'
+import { createMenuPage } from './menu'
 
 createHomePage()
 
@@ -19,7 +20,7 @@ const loadContent = (e) => {
     if (e.target.id == 'Home') {
         createHomePage()
     } else if (e.target.id == 'Menu') {
-        //createMenuPage()
+        createMenuPage()
     } else if (e.target.id == 'Order') {
         //createOrderPage()
     } else if (e.target.id == 'Contact') {

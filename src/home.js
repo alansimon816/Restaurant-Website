@@ -1,5 +1,6 @@
 import { createHeader } from './tabs'
 import { createFooter } from './footer'
+import { createBackground } from './background'
 
 const createDescription = () => {
     let description = document.createElement('p')
@@ -12,17 +13,6 @@ const createDescription = () => {
     a classic margarita pizza or some home-grown Mazzamurru, you are in for a 
     treat. No one does fine Italian cuisine better than we do.`
     document.querySelector('#content').appendChild(description)
-}
-
-const createImage = () => {
-    let div = document.createElement('div')
-    let img = document.createElement('img')
-    div.id = 'homeImageContainer'
-    img.src = '../dist/images/backgroundForSplashPage.jpg'
-    img.id = 'homeImage'
-    div.className = 'fill'
-    div.appendChild(img)
-    document.querySelector('#content').appendChild(div)
 }
 
 const createReviews = () => {
@@ -73,6 +63,10 @@ const createLogos = () => {
     grubHubImg.src = '../dist/images/grubHub.jpg'
     uberEatsImg.src = '../dist/images/uberEats.png'
     doorDashImg.src = '../dist/images/doorDash.jpg'
+    grubHubImg.alt = 'GrubHub logo'
+    uberEatsImg.alt = 'UberEats logo'
+    doorDashImg.alt = 'DoorDash logo'
+
     grubHub.appendChild(grubHubImg)
     uberEats.appendChild(uberEatsImg)
     doorDash.appendChild(doorDashImg)
@@ -82,7 +76,7 @@ const createLogos = () => {
 
 const createHomePage = () => { 
     createHeader()
-    createImage()
+    createBackground()
     let div = document.querySelector('#content')
     let h1 = document.createElement('h1')
     let h2 = document.createElement('h2')
