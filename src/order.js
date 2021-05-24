@@ -12,7 +12,7 @@ const createPlaceholder = () => {
     let img = document.createElement('img')
     let p = document.createElement('p')
     p.innerHTML = `Coming Soon!`
-    img.src = '../dist/images/artie.jpg'
+    img.src = 'images/artie.jpg'
     img.id = 'artie'
     div.id = 'order-placeholder-container'
     div.append(img)
