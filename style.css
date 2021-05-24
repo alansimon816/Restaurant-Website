@@ -30,7 +30,7 @@ h1 {
 #description {
     width:60%;
     margin: auto;
-    margin-top: 40%;
+    margin-top: 50%;
     margin-bottom: 40%;
     font-size: 2vw;
     background: black;
@@ -88,4 +88,25 @@ footer {
     position: fixed;
     margin: auto;
     z-index: -1;
+}
+
+#reviews {
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20%;
+}
+
+#review1 {
+    align-self: flex-start;
+}
+
+#review2 {
+    align-self: flex-end;
+}
+
+#review1, #review2 {
+    width: 40%;
 }
