@@ -1,5 +1,3 @@
-import { createHomePage } from './home'
-
 const createHeader = () => {
     let header = document.createElement('header')
     let home = document.createElement('div')

@@ -2,10 +2,12 @@ import { createHomePage } from './home'
 
 createHomePage()
 
-document.querySelector('#Home').addEventListener('click', loadContent)
-document.querySelector('#Menu').addEventListener('click', loadContent)
-document.querySelector('#Order').addEventListener('click', loadContent)
-document.querySelector('#Contact').addEventListener('click', loadContent)
+const setClickListeners = () => {
+    document.querySelector('#Home').addEventListener('click', loadContent)
+    document.querySelector('#Menu').addEventListener('click', loadContent)
+    document.querySelector('#Order').addEventListener('click', loadContent)
+    document.querySelector('#Contact').addEventListener('click', loadContent)
+}
 
 const loadContent = (e) => {
     wipeContent()
@@ -18,9 +20,12 @@ const loadContent = (e) => {
     } else if (e.target.id == 'Contact') {
 
     }
+    setClickListeners()
 }
+
+setClickListeners()
 
 const wipeContent = () => {
     let content = document.querySelector('#content')
-    document.querySelector('body').removeChild(content)
+    content.innerHTML = ''
 }
