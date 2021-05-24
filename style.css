@@ -139,3 +139,27 @@ footer {
     margin-right: auto;
     width: 50%;
 }
+
+#contact {
+    align-self: center;
+    background: wheat;
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    max-height: 100%;
+}
+
+#contactContainer {
+    border-style: solid;
+    border: black;
+    height: 87%;
+    margin-top:5%;
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+}
