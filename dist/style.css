@@ -31,7 +31,7 @@ h1 {
     width:60%;
     margin: auto;
     margin-top: 50%;
-    margin-bottom: 40%;
+    margin-bottom: 20%;
     font-size: 2vw;
     background: black;
     border-radius: 15px;
@@ -96,7 +96,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 
 #review1 {
@@ -109,4 +109,26 @@ footer {
 
 #review1, #review2 {
     width: 40%;
+}
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 10%;
+    width: 40%;
+    margin:auto;
+    margin-bottom: 5%;
+}
+
+#grubhub, #ubereats, #doordash {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+
+#grubhub-img, #ubereats-img, #doordash-img {
+    max-width:100%;
+    max-height:100%;
 }

@@ -51,6 +51,35 @@ const createReviews = () => {
 
 }
 
+const createLogos = () => {
+    let logos = document.createElement('div')
+    let grubHubImg = document.createElement('img')
+    let grubHub = document.createElement('a')
+    let uberEatsImg = document.createElement('img')
+    let uberEats = document.createElement('a')
+    let doorDashImg = document.createElement('img')
+    let doorDash = document.createElement('a')
+
+    grubHub.href = 'https://www.grubhub.com/'
+    uberEats.href = 'https://www.ubereats.com/'
+    doorDash.href = 'https://www.doordash.com/'
+    logos.id = 'logos'
+    grubHub.id = 'grubhub'
+    uberEats.id = 'ubereats'
+    doorDash.id = 'doordash'
+    grubHubImg.id = 'grubhub-img'
+    uberEatsImg.id = 'ubereats-img'
+    doorDashImg.id = 'doordash-img'
+    grubHubImg.src = '../dist/images/grubHub.jpg'
+    uberEatsImg.src = '../dist/images/uberEats.png'
+    doorDashImg.src = '../dist/images/doorDash.jpg'
+    grubHub.appendChild(grubHubImg)
+    uberEats.appendChild(uberEatsImg)
+    doorDash.appendChild(doorDashImg)
+    logos.append(grubHub, uberEats, doorDash)
+    document.querySelector('#content').appendChild(logos)
+}
+
 const createHomePage = () => { 
     createHeader()
     createImage()
@@ -63,6 +92,7 @@ const createHomePage = () => {
     div.appendChild(h2)
     createDescription()
     createReviews()
+    createLogos()
     createFooter() 
 }
 
