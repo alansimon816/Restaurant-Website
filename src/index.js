@@ -9,6 +9,11 @@ const setClickListeners = () => {
     document.querySelector('#Contact').addEventListener('click', loadContent)
 }
 
+const wipeContent = () => {
+    let content = document.querySelector('#content')
+    content.innerHTML = ''
+}
+
 const loadContent = (e) => {
     wipeContent()
     if (e.target.id == 'Home') {
@@ -24,8 +29,3 @@ const loadContent = (e) => {
 }
 
 setClickListeners()
-
-const wipeContent = () => {
-    let content = document.querySelector('#content')
-    content.innerHTML = ''
-}

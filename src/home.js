@@ -14,20 +14,20 @@ const createDescription = () => {
     document.querySelector('#content').appendChild(description)
 }
 
-// const createImage = () => {
-//     let div = document.createElement('div')
-//     let img = document.createElement('img')
-//     div.id = 'homeImageContainer'
-//     img.src = '../dist/images/backgroundForSplashPage.jpg'
-//     img.id = 'homeImage'
-//     div.className = 'fill'
-//     div.appendChild(img)
-//     document.querySelector('#content').appendChild(div)
-// }
+const createImage = () => {
+    let div = document.createElement('div')
+    let img = document.createElement('img')
+    div.id = 'homeImageContainer'
+    img.src = '../dist/images/backgroundForSplashPage.jpg'
+    img.id = 'homeImage'
+    div.className = 'fill'
+    div.appendChild(img)
+    document.querySelector('#content').appendChild(div)
+}
 
 const createHomePage = () => { 
     createHeader()
-    // createImage()
+    createImage()
     let div = document.querySelector('#content')
     let h1 = document.createElement('h1')
     let h2 = document.createElement('h2')

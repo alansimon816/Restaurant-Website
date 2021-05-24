@@ -6,9 +6,10 @@
 
 html, body {
     height: 100%;
-    background-image: url("images/backgroundForSplashPage.jpg");
-    background-size: cover;
-    background-repeat: no-repeat
+}
+
+#textContent {
+    overflow: auto;
 }
 
 #content {
@@ -29,10 +30,11 @@ h1 {
 #description {
     width:60%;
     margin: auto;
-    margin-top: 30%;
-    margin-bottom: 30%;
-    font-size: 3vw;
+    margin-top: 40%;
+    margin-bottom: 40%;
+    font-size: 2vw;
     background: black;
+    border-radius: 15px;
     opacity: 80%;
 }
 
@@ -45,6 +47,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
+    z-index: 100;
 }
 
 #space {
@@ -60,8 +63,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     bottom: 0;
+    position: fixed;
+    z-index: 100;
 }
 
 
@@ -69,33 +73,19 @@ footer {
     font-size: x-large;
 }
 
-/* #homeImage {
-    margin-top: 10%;
-    height: 87%;
-    width: auto;
-    margin-bottom: 3%;
+#homeImage {
+    height: 100%;
+    width: 100%;
     position: fixed;
     margin: auto; 
-    /* object-fit: cover;
-} */
+    object-fit: cover;
+}
 
-/* #homeImageContainer {
-    margin-top: 10%;
+#homeImageContainer {
     height: 87%;
+    margin-top: 10%;
     margin-bottom: 3%;
     position: fixed;
     margin: auto;
-} */
-
-/* .fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
+    z-index: -1;
 }
-.fill img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-} */
