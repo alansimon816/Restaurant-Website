@@ -7,10 +7,9 @@ const createContactInformation = () => {
     let contactInfo = document.createElement('p')
     contactInfo.id = 'contact'
     contactInfo.innerHTML =
-    `<b>Phone</b>: (201) 515-4954<br>
-     Email: ArtieBucco@NuovoVesuvios.com<br><br><br>
-     Hours of Operation<br>
-     -----------------------<br>
+    `<b>Phone</b>(201) 515-4954<br>
+     <b>Email</b>ArtieBucco@NuovoVesuvios.com<br><br>
+     <b>Hours of Operation</b><br>
      Monday 12pm-9pm<br>
      Tuesday 12pm-9pm<br>
      Wednesday 12pm-8pm<br>
