@@ -61,10 +61,41 @@ footer {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    bottom: 0;
+    /* bottom: 0; */
 }
 
 
 .tabs {
     font-size: x-large;
 }
+
+/* #homeImage {
+    margin-top: 10%;
+    height: 87%;
+    width: auto;
+    margin-bottom: 3%;
+    position: fixed;
+    margin: auto; 
+    /* object-fit: cover;
+} */
+
+/* #homeImageContainer {
+    margin-top: 10%;
+    height: 87%;
+    margin-bottom: 3%;
+    position: fixed;
+    margin: auto;
+} */
+
+/* .fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+} */
