@@ -1,6 +1,7 @@
 import { createHomePage } from './home'
 import { createMenuPage } from './menu'
 import { createContactPage } from './contact'
+import { createOrderPage } from './order'
 
 createHomePage()
 
@@ -23,7 +24,7 @@ const loadContent = (e) => {
     } else if (e.target.id == 'Menu') {
         createMenuPage()
     } else if (e.target.id == 'Order') {
-        // createOrderPage()
+        createOrderPage()
     } else if (e.target.id == 'Contact') {
         createContactPage()
     }

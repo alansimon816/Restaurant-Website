@@ -7,9 +7,9 @@ const createContactInformation = () => {
     let contactInfo = document.createElement('p')
     contactInfo.id = 'contact'
     contactInfo.innerHTML =
-    `<b>Phone</b>(201) 515-4954<br>
-     <b>Email</b>ArtieBucco@NuovoVesuvios.com<br><br>
-     <b>Hours of Operation</b><br>
+    `<b>Phone</b>(201) 515-4954<br><br>
+     <b>Email</b>ArtieBucco@NouvoVesuvios.com<br><br>
+     <b>Hours of Operation</b>
      Monday 12pm-9pm<br>
      Tuesday 12pm-9pm<br>
      Wednesday 12pm-8pm<br>
@@ -21,10 +21,6 @@ const createContactInformation = () => {
     div.appendChild(contactInfo)
     document.querySelector('#content').appendChild(div)
 }
-
-// const createHours = () => {
-//     let div = document.createElement('div')
-// }
 
 const createContactPage = () => {
     createHeader()

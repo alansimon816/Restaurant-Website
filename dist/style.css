@@ -145,16 +145,13 @@ footer {
     flex-direction: column;
     color: black;
     background: wheat;
-    /* border-style: dashed;
-    border: greenyellow; */
+    border: solid black;
     font-size: 2vw;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #contactContainer {
-    border-style: solid;
-    border: black;
     height: 87%;
     margin-top:5%;
     display: flex;
@@ -167,4 +164,17 @@ footer {
 
 b {
     text-align: center;
+}
+
+#order-placeholder-container {
+    height: 87%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#order-placeholder-container > p {
+    margin-top: 13%;
+    width: 100%;
+    font-size: 10vw;
+    color: black;
 }
